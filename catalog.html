@@ -126,15 +126,23 @@
             </label>
           </form>
 
-          <a class="button button-show-cards">
-            <span class="visually-hidden">Показать карточки</span>
-          </a>
-          <a class="button button-show-slideshow">
-            <span class="visually-hidden">Показать слайд-шоу</span>
-          </a>
-          <a class="button button-show-list">
-            <span class="visually-hidden">Показать список</span>
-          </a>
+          <ul class="cards-appearance-type-list">
+            <li class="cards-appearance-item">
+              <a class="button button-show-cards">
+                <span class="visually-hidden">Показать карточки</span>
+              </a>
+            </li>
+            <li class="cards-appearance-item">
+              <a class="button button-show-slideshow">
+                <span class="visually-hidden">Показать слайд-шоу</span>
+              </a>
+            </li>
+            <li class="cards-appearance-item">
+              <a class="button button-show-list">
+                <span class="visually-hidden">Показать список</span>
+              </a>
+            </li>
+          </ul>
         </div>
 
         <div class="catalog-cards-container">
@@ -282,9 +290,9 @@
           <label class="pagination-items-count-labes" for="select-pagination-items-count-control">
             Гостиниц на странице:
             <select class="control-select" aria-label="4" id="select-pagination-items-count-control">
-              <option value="four">4</option>
-              <option value="eight">8</option>
-              <option value="sixteen">16</option>
+              <option value="4">4</option>
+              <option value="8">8</option>
+              <option value="16">16</option>
             </select>
           </label>
         </form>
