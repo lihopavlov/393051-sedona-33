@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.navigation-link, .navigation-button {
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ffffff;
+}
+
+.navigation-link {
+    font-size: 20px;
+    line-height: 26px;
+    color: inherit;
+}
+
+.navigation-button {
+    color: #ffffff;
+    background-color: #756257;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    
+}
+
+.main-intro {
+    color: #000000;
+    background-color: #8f5b1d;
+    background-image: url("../images/index-background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.advantages-header {
+    color: #000000;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.advantages-header-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.advantages-header-description {
+    font-size: 22px;
+    line-height: 36px;
+}
+
+.advantages-list {
+    text-align: center;
+}
+
+.advantages-item {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.advantages-item .advantages-item-title {
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.advantages-item.item-one .advantages-item-content, 
+.advantages-item.item-two .advantages-item-content {
+    color: #ffffff;
+    background-color: #83b3d3;
+}
+
+.advantages-item-subitem {
+    color: #000000;
+}
+
+.advantages-item.item-three,
+.advantages-item.item-five,
+.advantages-item-subitem.item-one, 
+.advantages-item-subitem.item-three {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item.item-four {
+    background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-subitem-link {
+    font-size: 24px;
+    line-height: 28px;
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+}
