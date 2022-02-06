@@ -3,53 +3,46 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <a class="navigation-logo" href="index.html">
+        <a class="navigation-logo">
           <img class="page-header-logo" src="images/header-logo.svg" width="139" height="70" alt="Логотип Седоны">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
+            <a class="navigation-link navigation-link-current">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visually-hidden">
-                Поиск
-              </span>
+              <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visually-hidden ">
-                Отзывы
-              </span>
-              <span class="badge">
-                12
-              </span>
+              <span class="visually-hidden ">Избранное</span>
+              <span class="badge">12</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-button" href="#">
-              Хочу сюда!
-            </a>
+            <a class="button button-brown navigation-button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
     
     <main class="main-inner">
-      <div class="ctatalog-filter-container">
+      <div class="catalog-filter-container">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
@@ -105,7 +98,7 @@
               </ul>
             </fieldset>
 
-            <button class="button apply-filter-button" type="submit">Применить</button>
+            <button class="button button-blue apply-filter-button" type="submit">Применить</button>
             <button class="button reset-filter-button" type="reset">Сбросить</button>
           </form>
         </section>
@@ -154,11 +147,11 @@
               </a>
               <div class="pruduct-card-left-container">
                 <p class="pruduct-card-habitation-type-label">Гостиница</p>
-                <a class="button product-card-button-details" href="#">Подробнее</a>
+                <a class="button button-brown product-card-button-details" href="#">Подробнее</a>
               </div>
               <div class="product-card-right-container">
                 <p>От <b class="product-card-price-label">4000</b><span class="product-card-currency-label"> &#x20bd;</span></p>
-                <button class="button product-card-button-add-to-favorites" type="button">В избранное</button>
+                <button class="button button-blue product-card-button-add-to-favorites" type="button">В избранное</button>
               </div>
               <div class="product-card-rating-container">
                 <ul class="habitation-stars-list">
@@ -185,11 +178,11 @@
               </a>
               <div class="pruduct-card-left-container">
                 <p class="pruduct-card-habitation-type-label">Гостиница</p>
-                <a class="button product-card-button-details" href="#">Подробнее</a>
+                <a class="button button-brown product-card-button-details" href="#">Подробнее</a>
               </div>
               <div class="product-card-right-container">
                 <p>От <b class="product-card-price-label">3000</b><span class="product-card-currency-label"> &#x20bd;</span></p>
-                <button class="button product-card-button-add-to-favorites" type="button">В избранное</button>
+                <button class="button button-blue product-card-button-add-to-favorites" type="button">В избранное</button>
               </div>
               <div class="product-card-rating-container">
                 <ul class="habitation-stars-list">
@@ -213,11 +206,11 @@
               </a>
               <div class="pruduct-card-left-container">
                 <p class="pruduct-card-habitation-type-label">Гостиница</p>
-                <a class="button product-card-button-details" href="#">Подробнее</a>
+                <a class="button button-brown product-card-button-details" href="#">Подробнее</a>
               </div>
               <div class="product-card-right-container">
                 <p>От <b class="product-card-price-label">2000</b><span class="product-card-currency-label"> &#x20bd;</span></p>
-                <button class="button product-card-button-add-to-favorites" type="button">В избранное</button>
+                <button class="button button-blue product-card-button-add-to-favorites" type="button">В избранное</button>
               </div>
               <div class="product-card-rating-container">
                 <ul class="habitation-stars-list">
@@ -238,11 +231,11 @@
               </a>
               <div class="pruduct-card-left-container">
                 <p class="pruduct-card-habitation-type-label">Гостиница</p>
-                <a class="button product-card-button-details" href="#">Подробнее</a>
+                <a class="button button-blue product-card-button-details" href="#">Подробнее</a>
               </div>
               <div class="product-card-right-container">
                 <p>От <b class="product-card-price-label">3000</b><span class="product-card-currency-label"> &#x20bd;</span></p>
-                <button class="button product-card-button-add-to-favorites" type="button">В избранное</button>
+                <button class="button button-brown product-card-button-add-to-favorites" type="button">В избранное</button>
               </div>
               <div class="product-card-rating-container">
                 <ul class="habitation-stars-list">
@@ -261,28 +254,28 @@
         
         <div class="horizontal-separator">
         </div>
-        <a class="button button-load-more" href="#">Загрузить еще</a>
+        <a class="button button-blue button-load-more" href="#">Загрузить еще</a>
         <div class="horizontal-separator">
         </div>
 
         <ul class="pagination-list">
           <li class="pagination-item">
-            <a class="pagination-item pagination-disabled" href="#">1</a>
+            <a class="button button-blue pagination-disabled" href="#">1</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-item" href="#">2</a>
+            <a class="button button-blue" href="#">2</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-item" href="#">3</a>
+            <a class="button button-blue" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-item" href="#">4</a>
+            <a class="button button-blue" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-item" href="#">...</a>
+            <a class="button button-blue" href="#">...</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-item" href="#">10</a>
+            <a class="button button-blue" href="#">10</a>
           </li>
         </ul>
 
@@ -301,16 +294,18 @@
     
     <footer class="page-footer">
       <section class="newsletter">
-        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+        <h2 class="newsletter-title">
+          Подпишитесь на рассылку
+        </h2>
         <p class="newsletter-description">
-          Только полезная информация и никакого спама, честное бойскаутское!
+          Только полезная информация и никакого спама,<br> честное бойскаутское!
         </p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="newsletter-email">
             Email
             <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
           </label>
-          <button class="button newsletter-button" type="submit">Подписаться</button>
+          <button class="button button-blue newsletter-button" type="submit">Подписаться</button>
         </form>
       </section>
       
@@ -318,17 +313,17 @@
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button" href="#">
+            <a class="button twitter-button" href="#">
               <span class="visually-hidden">Twitter</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="#">
+            <a class="button facebook-button" href="#">
               <span class="visually-hidden">Facebook</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="#">
+            <a class="button youtube-button" href="#">
               <span class="visually-hidden">YouTube</span>
             </a>
           </li>
@@ -342,7 +337,9 @@
         </address>
       </section>
 
-      <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+      <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+        <span class="visually-hidden">.html academy</span>
+      </a>
     </footer>
   </body>
 </html>
