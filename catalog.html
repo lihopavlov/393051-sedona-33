@@ -42,70 +42,87 @@
         </nav>
       </header>
       
+      
       <main class="main-container main-inner">
         <div class="catalog-filter-container">
-          <header class="inner-header">
-            <h1 class="inner-header-title">Гостиницы Седоны</h1>
-            <ul class="breadcrumbs">
-              <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">Главная</span></a>
-              </li>
-              <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link">Гостиницы</a>
-              </li>
-            </ul>
-          </header>
+          <div class="catalog-filter-wrapper">
+            <header class="inner-header">
+              <h1 class="inner-header-title">Гостиницы Седоны</h1>
+              <ul class="breadcrumbs">
+                <li class="breadcrumbs-item">
+                  <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">Главная</span></a>
+                </li>
+                <li class="breadcrumbs-item">
+                  <a class="breadcrumbs-link">Гостиницы</a>
+                </li>
+              </ul>
+            </header>
 
-          <section class="catalog-filter">
-            <h2 class="visually-hidden" hidden>Фильтры для гостиниц</h2>
-            <form class="catalog-filter-controls" action="https://echo.htmlacademy.ru/" method="get">
-              <fieldset class="catalog-filter-controls-group">
-                <legend class="catalog-filter-controls-title">Инфраструктура:</legend>
-                <label class="control" for="swimming-pool-checkbox">
-                  <input class="control-input" type="checkbox" name="swimming-pool" id="swimming-pool-checkbox" checked>
-                  Бассейн
-                </label>
-                <label class="control" for="parking-checkbox">
-                  <input class="control-input" type="checkbox" name="parking" id="parking-checkbox" checked>
-                  Парковка
-                </label>
-                <label class="control" for="wi-fi-checkbox">
-                  <input class="control-input" type="checkbox" name="wi-fi" id="wi-fi-checkbox">
-                  Wi-Fi
-                </label>
-              </fieldset>
+            <section class="catalog-filter">
+              <h2 class="visually-hidden" hidden>Фильтры для гостиниц</h2>
+              <form class="catalog-filter-controls" action="https://echo.htmlacademy.ru/" method="get">
+                <fieldset class="catalog-filter-controls-group">
+                  <legend class="catalog-filter-controls-title">Инфраструктура:</legend>
+                  <ul class="catalog-filter-controls-list">
+                    <li class="catalog-filter-controls-item">
+                      <label class="control" for="swimming-pool-checkbox">
+                        <input class="control-input" type="checkbox" name="swimming-pool" id="swimming-pool-checkbox" checked>
+                        Бассейн
+                      </label>
+                    </li>
+                    <li class="catalog-filter-controls-item">
+                      <label class="control" for="parking-checkbox">
+                        <input class="control-input" type="checkbox" name="parking" id="parking-checkbox" checked>
+                        Парковка
+                      </label>
+                    </li>
+                    <li class="catalog-filter-controls-item">
+                      <label class="control" for="wi-fi-checkbox">
+                        <input class="control-input" type="checkbox" name="wi-fi" id="wi-fi-checkbox">
+                        Wi-Fi
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
 
-              <fieldset class="catalog-filter-controls-group">
-                <legend class="catalog-filter-controls-title">Тип жилья:</legend>
-                <ul class="catalog-filter-controls-list">
-                  <li class="catalog-filter-controls-item">
-                    <label class="control" for="habitation-type-hotel">
-                      <input class="control-input" type="radio" name="habitation-type" value="hotel" id="habitation-type-hotel" checked>
-                      Гостиница
-                    </label>
-                  </li>
-                  <li class="catalog-filter-controls-item">
-                    <label class="control" for="habitation-type-motel">
-                      <input class="control-input" type="radio" name="habitation-type" value="motel" id="habitation-type-motel">
-                      Мотель
-                    </label>
-                  </li>
-                  <li class="catalog-filter-controls-item">
-                    <label class="control" for="habitation-type-apartments">
-                      <input class="control-input" type="radio" name="habitation-type" value="apartments" id="habitation-type-apartments">
-                      Апартаменты
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
+                <fieldset class="catalog-filter-controls-group">
+                  <legend class="catalog-filter-controls-title">Тип жилья:</legend>
+                  <ul class="catalog-filter-controls-list">
+                    <li class="catalog-filter-controls-item">
+                      <label class="control" for="habitation-type-hotel">
+                        <input class="control-input" type="radio" name="habitation-type" value="hotel" id="habitation-type-hotel" checked>
+                        Гостиница
+                      </label>
+                    </li>
+                    <li class="catalog-filter-controls-item">
+                      <label class="control" for="habitation-type-motel">
+                        <input class="control-input" type="radio" name="habitation-type" value="motel" id="habitation-type-motel">
+                        Мотель
+                      </label>
+                    </li>
+                    <li class="catalog-filter-controls-item">
+                      <label class="control" for="habitation-type-apartments">
+                        <input class="control-input" type="radio" name="habitation-type" value="apartments" id="habitation-type-apartments">
+                        Апартаменты
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
 
-              <button class="button button-blue apply-filter-button" type="submit">Применить</button>
-              <button class="button reset-filter-button" type="reset">Сбросить</button>
-            </form>
-          </section>
+                <div class="catalog-filter-controls-group">
+
+                </div>
+
+                <div class="catalog-filter-controls-group apply-reset">
+                  <button class="button button-blue apply-filter-button" type="submit">Применить</button>
+                  <button class="button reset-filter-button" type="reset">Сбросить</button>
+                </div>
+              </form>
+            </section>
+          </div> <!-- catalog-filter-wrapper -->
         </div>
         
-        <div class="catalog-main-container">
+        <div class="catalog-result-container">
           <section class="catalog-result">
             <h2 class="visually-hidden" hidden>Результат фильтрации гостиниц</h2>
             <div class="sorting-box-container">
@@ -312,37 +329,39 @@
       </main>
       
       <footer class="page-footer">
-        <section class="footer-social">
-          <h2 class="visually-hidden">Социальные сети</h2>
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a class="button twitter-button" href="#">
-                <span class="visually-hidden">Twitter</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button facebook-button" href="#">
-                <span class="visually-hidden">Facebook</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button youtube-button" href="#">
-                <span class="visually-hidden">YouTube</span>
-              </a>
-            </li>
-          </ul>
-        </section>
+        <div class="page-footer-container">
+          <section class="footer-social">
+            <h2 class="visually-hidden" hidden>Социальные сети</h2>
+            <ul class="footer-social-list">
+              <li class="footer-social-item">
+                <a class="button twitter-button" href="#">
+                  <span class="visually-hidden">Twitter</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="button facebook-button" href="#">
+                  <span class="visually-hidden">Facebook</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="button youtube-button" href="#">
+                  <span class="visually-hidden">YouTube</span>
+                </a>
+              </li>
+            </ul>
+          </section>
 
-        <section class="footer-contacts">
-          <h2 class="visually-hidden">Контакты</h2>
-          <address>
-            <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          </address>
-        </section>
+          <section class="footer-contacts">
+            <h2 class="visually-hidden" hidden>Контакты</h2>
+            <address>
+              <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            </address>
+          </section>
 
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-          <span class="visually-hidden">.html academy</span>
-        </a>
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+            <span class="visually-hidden">.html academy</span>
+          </a>
+        </div>
       </footer>
     </div>
   </body>

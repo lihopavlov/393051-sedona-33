@@ -264,17 +264,26 @@ body {
 
 /* Catalog Page */
 
-.catalog-main-container {
-    width: 1056px;
-    margin: 0 auto;
-}
-
 .catalog-filter-container {
     color: #ffffff;
     background-color: #83b3d3;
     background-image: url("../images/catalog-background.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;    
+}
+
+.catalog-filter-wrapper {
+    width: 1056px;
+    margin: 0 auto;
+}
+
+.catalog-filter-controls {
+    display: flex;
+}
+
+.catalog-filter-controls-list {
+    margin: 0px;
+    padding: 0px;
 }
 
 .inner-header-title {
@@ -300,6 +309,11 @@ body {
     outline: none;
     border: none;
     overflow: hidden;
+}
+
+.catalog-result-container {
+    width: 1056px;
+    margin: 0 auto;
 }
 
 .sorting-box-container {
