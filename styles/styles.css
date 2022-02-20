@@ -30,7 +30,7 @@ body {
     background-color: #ffffff;
 }
 
-/* .visually-hidden {
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -39,7 +39,7 @@ body {
     border: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
-} */
+}
 
 .main-index, .newsletter {
     text-align: center;
@@ -195,8 +195,7 @@ body {
 }
 
 .advantages-header-description {
-    margin: 0px;
-    margin-bottom: 80px;
+    margin: 0px 0px 80px;
     font-size: 22px;
     line-height: 36px;
 }
@@ -217,23 +216,25 @@ body {
 }
 
 .advantages-item .advantages-item-content {
-    
+    padding-top: 97px;
+    padding-bottom: 87px;
     width: 400px;
 }
 
 .advantages-item .advantages-item-title {
-    margin: 0;
+    margin: 0px 0px 30px;
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
+    
 }
 
 .advantages-item .advantages-item-number {
-    margin: 0;
+    margin: 0px 0px 30px;
 }
 
 .advantages-item-description {
-    margin: 0;
+    margin: 0px 0px;
 }
 
 .advantages-item-image > img {
@@ -254,16 +255,22 @@ body {
 }
 
 .advantages-item-subitem {
+    padding-top: 89px;
+    padding-bottom: 79px;
     color: #000000;
     width: 400px;
 }
 
+.advantages-item-subitem .advantages-item-subitem-image {
+    margin: 0px 0px 20px;
+}
+
 .advantages-item-subitem > h4 {
-    margin: 0;
+    margin: 0px 0px 20px;
 }
 
 .advantages-item-subitem .advantages-item-subitem-description {
-    margin: 0;
+    margin: 0px; 
 }
 
 .advantages-item.item-two {
@@ -293,18 +300,47 @@ body {
     text-transform: uppercase;
 }
 
+/* Find Hotel Form */
+
+.find-hotel {
+    padding-top: 91px;
+    padding-bottom: 93px;
+}
+
+.find-hotel .find-hotel-title {
+    margin: 0px 0px 29px;
+}
+
+.find-hotel .find-hotel-description {
+    margin: 0px 0px 56px;
+}
+
+/* Newsletter */
+
 .newsletter-description, .find-hotel-description {
     font-size: 22px;
     line-height: 26px;
 }
 
 .newsletter {
+    padding-top: 94px;
+    padding-bottom: 94px;
     color: #ffffff;
     background-color: #83b3d3;
     background-image: url("../images/newsletter-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
+
+.newsletter .newsletter-title {
+    margin: 0px 0px 29px;
+}
+
+.newsletter .newsletter-description {
+    margin: 0px 0px 46px;
+}
+
+/* Footer */
 
 .page-footer {
     color: #000000;
@@ -316,15 +352,22 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    padding-top: 40px;
 }
 
 .footer-social-list {
     margin: 0px;
     padding: 0px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
 }
 
 .footer-social-list a {
+    display: block;
     color: #000000;
+    width: 20px;
+    height: 16px;
 }
 
 .contacts-phone {
