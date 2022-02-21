@@ -50,7 +50,7 @@
               <h1 class="inner-header-title">Гостиницы Седоны</h1>
               <ul class="breadcrumbs">
                 <li class="breadcrumbs-item">
-                  <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">Главная</span></a>
+                  <a class="breadcrumbs-link main-link" href="index.html"><span class="visually-hidden">Главная</span></a>
                 </li>
                 <li class="breadcrumbs-item">
                   <a class="breadcrumbs-link">Гостиницы</a>
@@ -129,13 +129,12 @@
               <span class="filter-result-label">Найдено гостиниц: <b class="filter-result-value">38</b></span>
               
               <form class="sorting-type" action="https://echo.htmlacademy.ru/" method="get">
-                <label class="visually-hidden" for="select-sorting-control">
-                  <select class="control-select" aria-label="Сортировка" id="select-sorting-control">
-                    <option value="cheap">Сначала дешёвые</option>
-                    <option value="expensive">Сначала дорогие</option>
-                    <option value="popular">Сначала популярные</option>
-                  </select>
-                </label>
+                <label class="visually-hidden" for="select-sorting-control"></label>
+                <select class="control-select" aria-label="Сортировка" id="select-sorting-control">
+                  <option value="cheap">Сначала дешёвые</option>
+                  <option value="expensive">Сначала дорогие</option>
+                  <option value="popular">Сначала популярные</option>
+                </select>
               </form>
 
               <ul class="cards-appearance-type-list">
@@ -277,37 +276,39 @@
             <div class="horizontal-separator">
             </div>
 
-            <ul class="pagination-list">
-              <li class="pagination-item">
-                <a class="button button-blue pagination-disabled" href="#">1</a>
-              </li>
-              <li class="pagination-item">
-                <a class="button button-blue" href="#">2</a>
-              </li>
-              <li class="pagination-item">
-                <a class="button button-blue" href="#">3</a>
-              </li>
-              <li class="pagination-item">
-                <a class="button button-blue" href="#">4</a>
-              </li>
-              <li class="pagination-item">
-                <a class="button button-blue" href="#">...</a>
-              </li>
-              <li class="pagination-item">
-                <a class="button button-blue" href="#">10</a>
-              </li>
-            </ul>
+            <div class="pagination-container">
+              <ul class="pagination-list">
+                <li class="pagination-item">
+                  <a class="pagination-link button button-blue pagination-disabled" href="#">1</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link button button-blue" href="#">2</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link button button-blue" href="#">3</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link button button-blue" href="#">4</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link button button-blue" href="#">...</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link button button-blue" href="#">10</a>
+                </li>
+              </ul>
 
-            <form class="pagination-items-count" action="https://echo.htmlacademy.ru/" method="get">
-              <label class="pagination-items-count-labes" for="select-pagination-items-count-control">
-                Гостиниц на странице:
-                <select class="control-select" aria-label="4" id="select-pagination-items-count-control">
-                  <option value="4">4</option>
-                  <option value="8">8</option>
-                  <option value="16">16</option>
-                </select>
-              </label>
-            </form>
+              <form class="pagination-items-count" action="https://echo.htmlacademy.ru/" method="get">
+                <label class="pagination-items-count-labes" for="select-pagination-items-count-control">
+                  Гостиниц на странице:
+                  <select class="control-select" aria-label="4" id="select-pagination-items-count-control">
+                    <option value="4">4</option>
+                    <option value="8">8</option>
+                    <option value="16">16</option>
+                  </select>
+                </label>
+              </form>
+            </div>
           </section>
 
           <section class="newsletter newsletter-catalog">
