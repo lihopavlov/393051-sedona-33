@@ -571,7 +571,8 @@ body {
     display: block;
     box-sizing: border-box;
     width: 55px;
-    height: 55px;    
+    height: 55px;
+    padding: 16px 14px;
 }
 
 .pagination-disabled {
