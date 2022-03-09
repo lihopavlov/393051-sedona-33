@@ -60,6 +60,7 @@ body {
     font-family: inherit;
     font-size: 16px;
     font-weight: 700;
+    line-height: inherit;
     text-align: center;
     color: #ffffff;
     text-decoration: none;
@@ -465,7 +466,7 @@ body {
     background-image: url("../images/catalog-background.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
-    margin-bottom: 44px;   
+    margin-bottom: 42px;   
 }
 
 .catalog-filter-wrapper {
@@ -601,7 +602,7 @@ body {
 }
 
 .product-list {
-    margin: 0px 0px 34px;
+    margin: 0px 0px 64px;
     padding: 0px;
     list-style-type: none;
     display: grid;
@@ -654,6 +655,11 @@ body {
     margin-left: auto;
 }
 
+.product-card-right-container > .product-card-button-add-to-favorites {
+    padding-left: 21px;
+    padding-right: 21px;
+}
+
 .product-card-right-container > p {
     margin-top: 0px;
     margin-bottom: 16px;
@@ -668,12 +674,16 @@ body {
     padding: 0px;
     display: flex;
     width: 130px;
+    list-style-type: none;
+    align-items: center;
 }
 
 .habitation-stars-item {
     width: 18px;
     height: 18px;
     padding-right: 7px;
+    background-image: url("../images/star.svg");
+    background-repeat: no-repeat;
 }
 
 .habitation-rating-label {
@@ -683,20 +693,22 @@ body {
     font-size: 16px;
     background-color: #f2f2f2;
     text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 5px;
 }
 
 .product-card-price-label, .habitation-rating-value {
     font-weight: 400;
 }
 
-.horizontal-separator {
-    margin-bottom: 30px;
-}
-
 .button-load-more {
-    margin: 0px auto 30px auto;
+    margin: 30px auto 60px auto;
     display: block;
     width: 620px;
+    line-height: 26px;
+    font-size: 20px;
+    padding: 17px 0px;
 }
 
 .pagination-container {
@@ -713,7 +725,7 @@ body {
 }
 
 .pagination-list .pagination-item:not(:last-child) {
-    margin-right: 7px;
+    margin-right: 8px;
 }
 
 .pagination-link {
@@ -721,7 +733,9 @@ body {
     box-sizing: border-box;
     width: 55px;
     height: 55px;
-    padding: 16px 14px;
+    padding: 14px 14px;
+    line-height: 26px;
+    font-size: 20px;
 }
 
 .pagination-disabled {
@@ -729,9 +743,20 @@ body {
     background-color: #f2f2f2;
 }
 
+.pagination-items-count-label {
+    margin-right: 51px;
+}
+
 .newsletter.newsletter-catalog {
+    padding-top: 73px;
+    padding-bottom: 141px;
     color: #000000;
     background-image: none;
     background-color: #ffffff;
+
+}
+
+.newsletter.newsletter-catalog .newsletter-title{
+    margin-bottom: 46px;
 }
 
